@@ -48,7 +48,7 @@ function getIPv4() {
             This ensures the public IP remains consistent across instance reboots.
     Note: Always enclose the IP address in single quotes ''.
 */
-const IPv4 = "attimo-mirotalk-attimo.3smdzk.easypanel.host"; // Replace with the appropriate IPv4 address for your environment.
+const IPv4 = "127.0.0.1"; // Replace with the appropriate IPv4 address for your environment.
 
 /*
     Set the port range for WebRTC communication. This range is used for the dynamic allocation of UDP ports for media streams.
