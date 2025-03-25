@@ -278,9 +278,9 @@ module.exports = {
             2. Create your account
             3. Generate your APIKey https://platform.openai.com/account/api-keys
         */
-        enabled: false,
+        enabled: true,
         basePath: 'https://api.openai.com/v1/',
-        apiKey: '',
+        apiKey: 'sk-proj-1234567890',
         model: 'gpt-3.5-turbo',
         max_tokens: 1000,
         temperature: 0,
