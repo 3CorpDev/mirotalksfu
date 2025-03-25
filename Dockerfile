@@ -34,5 +34,8 @@ RUN apt-get purge -y --auto-remove \
 COPY app app
 COPY public public
 
+# Expose WebRTC UDP ports
+EXPOSE 40000-41000/udp
+
 # Set default command to start the application
 CMD ["npm", "start"]
