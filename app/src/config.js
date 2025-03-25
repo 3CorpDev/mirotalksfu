@@ -140,10 +140,10 @@ module.exports = {
             fromStream: true,
             maxStreams: 1,
             server: 'rtmp://localhost:1935',
-            appName: 'mirotalk',
+            appName: 'attimo',
             streamKey: '',
-            secret: 'mirotalkRtmpSecret',
-            apiSecret: 'mirotalkRtmpApiSecret',
+            secret: 'attimoRtmpSecret',
+            apiSecret: 'attimoRtmpApiSecret',
             expirationHours: 4,
             dir: 'rtmp',
             ffmpegPath: ffmpegPath,
@@ -163,7 +163,7 @@ module.exports = {
     },
     api: {
         // Default secret key for app/api
-        keySecret: 'mirotalksfu_default_secret',
+        keySecret: 'attimo_conference_default_secret',
         // Define which endpoints are allowed
         allowed: {
             stats: true,
@@ -181,7 +181,7 @@ module.exports = {
             JWT https://jwt.io/
             Securely manages credentials for host configurations and user authentication, enhancing security and streamlining processes.
          */
-        key: 'mirotalksfu_jwt_secret',
+        key: 'attimo_conference_jwt_secret',
         exp: '1h',
     },
     oidc: {
@@ -203,10 +203,10 @@ module.exports = {
         },
         config: {
             issuerBaseURL: 'https://server.example.com',
-            baseURL: `http://localhost:${process.env.PORT ? process.env.PORT : 3010}`, // https://sfu.mirotalk.com
+            baseURL: `http://localhost:${process.env.PORT ? process.env.PORT : 3010}`, // altere para seu domínio
             clientID: 'clientID',
             clientSecret: 'clientSecret',
-            secret: 'mirotalksfu-oidc-secret',
+            secret: 'attimo-conference-oidc-secret',
             authorizationParams: {
                 response_type: 'code',
                 scope: 'openid profile email',
@@ -238,7 +238,7 @@ module.exports = {
         //users_api_room_allowed: 'https://webrtc.mirotalk.com/api/v1/user/isRoomAllowed',
         //users_api_rooms_allowed: 'https://webrtc.mirotalk.com/api/v1/user/roomsAllowed',
         //api_room_exists: 'https://webrtc.mirotalk.com//api/v1/room/exists',
-        users_api_secret_key: 'mirotalkweb_default_secret',
+        users_api_secret_key: 'attimo_default_secret',
         users: [
             {
                 username: 'username',
@@ -296,7 +296,7 @@ module.exports = {
         basePath: 'https://api.heygen.com',
         apiKey: '',
         systemLimit:
-            'You are a streaming avatar from MiroTalk SFU, an industry-leading product that specialize in videos communications.',
+            'You are a streaming avatar from Attimo Conference, a product that specializes in video communications.',
     },
     email: {
         /*
@@ -308,7 +308,7 @@ module.exports = {
         port: 587,
         username: 'your_username',
         password: 'your_password',
-        sendTo: 'sfu.mirotalk@gmail.com',
+        sendTo: 'contato@attimo.com', // altere para seu email
     },
     ngrok: {
         /* 
@@ -399,9 +399,9 @@ module.exports = {
         token: '',
         commands: [
             {
-                name: '/sfu',
-                message: 'Here is your SFU meeting room:',
-                baseUrl: 'https://sfu.mirotalk.com/join/',
+                name: '/attimo',
+                message: 'Here is your meeting room:',
+                baseUrl: 'https://seu-dominio.com/join/',
             },
         ],
     },
@@ -443,7 +443,7 @@ module.exports = {
             app: {
                 language: 'pt', // https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes
                 name: 'Attimo Conference',
-                title: 'Attimo Conference<br />Chamadas de vídeo gratuitas pelo navegador.<br />Simples, Seguro, Rápido.',
+                title: 'Attimo Conference<br />Chamadas de vídeo pelo navegador.<br />Simples, Seguro, Rápido.',
                 description:
                     'Inicie sua próxima videochamada com um único clique. Não é necessário baixar, instalar plug-in ou fazer login. Comece a conversar, enviar mensagens e compartilhar sua tela imediatamente.',
                 joinDescription: 'Escolha um nome para a sala.<br />Que tal este?',
@@ -451,7 +451,7 @@ module.exports = {
                 joinLastLabel: 'Sua sala recente:',
             },
             site: {
-                title: 'Attimo Conference, Chamadas de Vídeo Gratuitas, Mensagens e Compartilhamento de Tela',
+                title: 'Attimo Conference, Chamadas de Vídeo, Mensagens e Compartilhamento de Tela',
                 icon: '../images/logo5_alta_small.png',
                 appleTouchIcon: '../images/logo5_alta_small.png',
                 newRoomTitle: 'Escolha um nome. <br />Compartilhe a URL. <br />Inicie a conferência.',
@@ -469,22 +469,26 @@ module.exports = {
                 siteName: 'Attimo Conference',
                 title: 'Clique no link para fazer uma chamada.',
                 description: 'Attimo Conference oferece videochamadas em tempo real, mensagens e compartilhamento de tela.',
-                image: 'https://sfu.mirotalk.com/images/mirotalksfu.png',
-                url: 'https://sfu.mirotalk.com',
+                image: '../images/logo5_alta_small.png',
+                url: 'https://seu-dominio.com',
             },
             html: {
                 features: true,
                 teams: true,
                 tryEasier: true,
-                poweredBy: true,
-                sponsors: true,
-                advertisers: true,
+                poweredBy: false, // Desabilitar poweredBy para remover créditos
+                sponsors: false,   // Desabilitar sponsors para remover créditos
+                advertisers: false, // Desabilitar advertisers
                 footer: true,
             },
             about: {
-                imageUrl: '../images/mirotalk-logo.gif',
-                title: `WebRTC SFU v${packageJson.version}`,
-                html: ``,
+                imageUrl: '../images/logo5_alta_small.png',
+                title: `Attimo Conference`,
+                html: `
+                    <hr />
+                    <span>&copy; 2025 Attimo Conference, todos os direitos reservados</span>
+                    <hr />
+                `,
             },
             //...
         },
@@ -597,9 +601,9 @@ module.exports = {
             Umami: https://github.com/umami-software/umami
             We use our Self-hosted Umami to track aggregated usage statistics in order to improve our service.
         */
-        enabled: true,
-        src: 'https://stats.mirotalk.com/script.js',
-        id: '41d26670-f275-45bb-af82-3ce91fe57756',
+        enabled: false,  // Desativar estatísticas do Umami do desenvolvedor original
+        src: '',
+        id: '',
     },
     mediasoup: {
         // Worker settings

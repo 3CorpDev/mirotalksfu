@@ -32,7 +32,7 @@ let BRAND = {
     app: {
         language: 'pt-br',
         name: 'Attimo Conference',
-        title: 'Attimo Conference<br />Chamadas de vídeo em tempo real gratuitas no navegador.<br />Simples, Seguro, Rápido.',
+        title: 'Attimo Conference<br />Chamadas de vídeo em tempo real pelo navegador.<br />Simples, Seguro, Rápido.',
         description:
             'Inicie sua próxima videochamada com um único clique. Sem download, plug-in ou login necessário. Vá direto para conversar, enviar mensagens e compartilhar sua tela.',
         joinDescription: 'Escolha um nome para a sala.<br />Que tal este?',
@@ -40,7 +40,7 @@ let BRAND = {
         joinLastLabel: 'Sua sala recente:',
     },
     site: {
-        title: 'Attimo Conference, Chamadas de Vídeo Gratuitas, Mensagens e Compartilhamento de Tela',
+        title: 'Attimo Conference, Chamadas de Vídeo, Mensagens e Compartilhamento de Tela',
         icon: '../images/logo5_alta_small.png',
         appleTouchIcon: '../images/logo5_alta_small.png',
         newRoomTitle: 'Escolha um nome. <br />Compartilhe a URL. <br />Inicie a conferência.',
@@ -57,39 +57,15 @@ let BRAND = {
         features: true,
         teams: true,
         tryEasier: true,
-        poweredBy: true,
-        sponsors: true,
-        advertisers: true,
+        poweredBy: false,
+        sponsors: false,
+        advertisers: false,
         footer: true,
     },
     about: {
-        imageUrl: '../images/mirotalk-logo.gif',
-        title: '<strong>WebRTC SFU v1.7.86</strong>',
+        imageUrl: '../images/logo5_alta_small.png',
+        title: '<strong>Attimo Conference</strong>',
         html: `
-            <button 
-                id="support-button" 
-                data-umami-event="Support button" 
-                onclick="window.open('https://codecanyon.net/user/miroslavpejic85', '_blank')">
-                <i class="fas fa-heart"></i> Apoiar
-            </button>
-            <br /><br /><br />
-            Autor: 
-            <a 
-                id="linkedin-button" 
-                data-umami-event="Linkedin button" 
-                href="https://www.linkedin.com/in/miroslav-pejic-976a07101/" 
-                target="_blank"> 
-                Miroslav Pejic
-            </a>
-            <br /><br />
-            Email: 
-            <a 
-                id="email-button" 
-                data-umami-event="Email button" 
-                href="mailto:miroslav.pejic.85@gmail.com?subject=Attimo Conference info"> 
-                miroslav.pejic.85@gmail.com
-            </a>
-            <br /><br />
             <hr />
             <span>&copy; 2025 Attimo Conference, todos os direitos reservados</span>
             <hr />
