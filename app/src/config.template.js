@@ -441,34 +441,34 @@ module.exports = {
         */
         brand: {
             app: {
-                language: 'en', // https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes
-                name: 'MiroTalk SFU',
-                title: 'MiroTalk SFU<br />Free browser based Real-time video calls.<br />Simple, Secure, Fast.',
+                language: 'pt', // https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes
+                name: 'Attimo Conference',
+                title: 'Attimo Conference<br />Chamadas de vídeo gratuitas pelo navegador.<br />Simples, Seguro, Rápido.',
                 description:
-                    'Start your next video call with a single click. No download, plug-in, or login is required. Just get straight to talking, messaging, and sharing your screen.',
-                joinDescription: 'Pick a room name.<br />How about this one?',
-                joinButtonLabel: 'JOIN ROOM',
-                joinLastLabel: 'Your recent room:',
+                    'Inicie sua próxima videochamada com um único clique. Não é necessário baixar, instalar plug-in ou fazer login. Comece a conversar, enviar mensagens e compartilhar sua tela imediatamente.',
+                joinDescription: 'Escolha um nome para a sala.<br />Que tal este?',
+                joinButtonLabel: 'ENTRAR NA SALA',
+                joinLastLabel: 'Sua sala recente:',
             },
             site: {
-                title: 'MiroTalk SFU, Free Video Calls, Messaging and Screen Sharing',
+                title: 'Attimo Conference, Chamadas de Vídeo Gratuitas, Mensagens e Compartilhamento de Tela',
                 icon: '../images/logo.svg',
                 appleTouchIcon: '../images/logo.svg',
-                newRoomTitle: 'Pick name. <br />Share URL. <br />Start conference.',
+                newRoomTitle: 'Escolha um nome. <br />Compartilhe a URL. <br />Inicie a conferência.',
                 newRoomDescription:
-                    "Each room has its disposable URL. Just pick a room name and share your custom URL. It's that easy.",
+                    'Cada sala tem sua URL descartável. Basta escolher um nome para a sala e compartilhar sua URL personalizada. É simples assim.',
             },
             meta: {
                 description:
-                    'MiroTalk SFU powered by WebRTC and mediasoup, Real-time Simple Secure Fast video calls, messaging and screen sharing capabilities in the browser.',
+                    'Attimo Conference movido por WebRTC e mediasoup, videochamadas em tempo real Simples, Seguras e Rápidas, com recursos de mensagens e compartilhamento de tela no navegador.',
                 keywords:
-                    'webrtc, miro, mediasoup, mediasoup-client, self hosted, voip, sip, real-time communications, chat, messaging, meet, webrtc stun, webrtc turn, webrtc p2p, webrtc sfu, video meeting, video chat, video conference, multi video chat, multi video conference, peer to peer, p2p, sfu, rtc, alternative to, zoom, microsoft teams, google meet, jitsi, meeting',
+                    'webrtc, attimo, mediasoup, mediasoup-client, self hosted, voip, sip, comunicações em tempo real, chat, mensagens, meet, webrtc stun, webrtc turn, webrtc p2p, webrtc sfu, reunião por vídeo, chat por vídeo, conferência por vídeo, chat de vídeo múltiplo, conferência de vídeo múltipla, peer to peer, p2p, sfu, rtc, alternativa a, zoom, microsoft teams, google meet, jitsi, meeting',
             },
             og: {
                 type: 'app-webrtc',
-                siteName: 'MiroTalk SFU',
-                title: 'Click the link to make a call.',
-                description: 'MiroTalk SFU calling provides real-time video calls, messaging and screen sharing.',
+                siteName: 'Attimo Conference',
+                title: 'Clique no link para fazer uma chamada.',
+                description: 'Attimo Conference oferece videochamadas em tempo real, mensagens e compartilhamento de tela.',
                 image: 'https://sfu.mirotalk.com/images/mirotalksfu.png',
                 url: 'https://sfu.mirotalk.com',
             },
@@ -489,10 +489,10 @@ module.exports = {
                         id="support-button" 
                         data-umami-event="Support button" 
                         onclick="window.open('https://codecanyon.net/user/miroslavpejic85', '_blank')">
-                        <i class="fas fa-heart"></i> Support
+                        <i class="fas fa-heart"></i> Suporte
                     </button>
                     <br /><br /><br />
-                    Author: 
+                    Autor: 
                     <a 
                         id="linkedin-button" 
                         data-umami-event="Linkedin button" 
@@ -505,12 +505,12 @@ module.exports = {
                     <a 
                         id="email-button" 
                         data-umami-event="Email button" 
-                        href="mailto:miroslav.pejic.85@gmail.com?subject=MiroTalk SFU info"> 
+                        href="mailto:miroslav.pejic.85@gmail.com?subject=Attimo Conference info"> 
                         miroslav.pejic.85@gmail.com
                     </a>
                     <br /><br />
                     <hr />
-                    <span>&copy; 2025 MiroTalk SFU, all rights reserved</span>
+                    <span>&copy; 2025 Attimo Conference, todos os direitos reservados</span>
                     <hr />
                 `,
             },
