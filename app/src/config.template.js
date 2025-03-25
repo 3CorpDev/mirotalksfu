@@ -452,8 +452,8 @@ module.exports = {
             },
             site: {
                 title: 'Attimo Conference, Chamadas de Vídeo Gratuitas, Mensagens e Compartilhamento de Tela',
-                icon: '../images/logo5_alta.png',
-                appleTouchIcon: '../images/logo5_alta.png',
+                icon: '../images/logo5_alta_small.png',
+                appleTouchIcon: '../images/logo5_alta_small.png',
                 newRoomTitle: 'Escolha um nome. <br />Compartilhe a URL. <br />Inicie a conferência.',
                 newRoomDescription:
                     'Cada sala tem sua URL descartável. Basta escolher um nome para a sala e compartilhar sua URL personalizada. É simples assim.',
