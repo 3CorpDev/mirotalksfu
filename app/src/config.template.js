@@ -295,8 +295,7 @@ module.exports = {
         enabled: false,
         basePath: 'https://api.heygen.com',
         apiKey: '',
-        systemLimit:
-            'You are a streaming avatar from MiroTalk SFU, an industry-leading product that specialize in videos communications.',
+        systemLimit: 'You are a streaming avatar from Attimo Conference, a product that specializes in video communications.',
     },
     email: {
         /*
@@ -308,7 +307,7 @@ module.exports = {
         port: 587,
         username: 'your_username',
         password: 'your_password',
-        sendTo: 'sfu.mirotalk@gmail.com',
+        sendTo: 'contato@attimo.com',
     },
     ngrok: {
         /* 
@@ -443,7 +442,7 @@ module.exports = {
             app: {
                 language: 'pt', // https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes
                 name: 'Attimo Conference',
-                title: 'Attimo Conference<br />Chamadas de vídeo gratuitas pelo navegador.<br />Simples, Seguro, Rápido.',
+                title: 'Attimo Conference<br />Chamadas de vídeo pelo navegador.<br />Simples, Seguro, Rápido.',
                 description:
                     'Inicie sua próxima videochamada com um único clique. Não é necessário baixar, instalar plug-in ou fazer login. Comece a conversar, enviar mensagens e compartilhar sua tela imediatamente.',
                 joinDescription: 'Escolha um nome para a sala.<br />Que tal este?',
@@ -451,7 +450,7 @@ module.exports = {
                 joinLastLabel: 'Sua sala recente:',
             },
             site: {
-                title: 'Attimo Conference, Chamadas de Vídeo Gratuitas, Mensagens e Compartilhamento de Tela',
+                title: 'Attimo Conference, Chamadas de Vídeo, Mensagens e Compartilhamento de Tela',
                 icon: '../images/logo5_alta_small.png',
                 appleTouchIcon: '../images/logo5_alta_small.png',
                 newRoomTitle: 'Escolha um nome. <br />Compartilhe a URL. <br />Inicie a conferência.',
@@ -469,46 +468,22 @@ module.exports = {
                 siteName: 'Attimo Conference',
                 title: 'Clique no link para fazer uma chamada.',
                 description: 'Attimo Conference oferece videochamadas em tempo real, mensagens e compartilhamento de tela.',
-                image: 'https://sfu.mirotalk.com/images/mirotalksfu.png',
-                url: 'https://sfu.mirotalk.com',
+                image: '../images/logo5_alta_small.png',
+                url: 'https://attimo.com',
             },
             html: {
                 features: true,
                 teams: true,
                 tryEasier: true,
-                poweredBy: true,
-                sponsors: true,
-                advertisers: true,
+                poweredBy: false,
+                sponsors: false,
+                advertisers: false,
                 footer: true,
             },
             about: {
-                imageUrl: '../images/mirotalk-logo.gif',
-                title: `WebRTC SFU v${packageJson.version}`,
+                imageUrl: '../images/logo5_alta_small.png',
+                title: `Attimo Conference`,
                 html: `
-                    <button 
-                        id="support-button" 
-                        data-umami-event="Support button" 
-                        onclick="window.open('https://codecanyon.net/user/miroslavpejic85', '_blank')">
-                        <i class="fas fa-heart"></i> Suporte
-                    </button>
-                    <br /><br /><br />
-                    Autor: 
-                    <a 
-                        id="linkedin-button" 
-                        data-umami-event="Linkedin button" 
-                        href="https://www.linkedin.com/in/miroslav-pejic-976a07101/" 
-                        target="_blank"> 
-                        Miroslav Pejic
-                    </a>
-                    <br /><br />
-                    Email: 
-                    <a 
-                        id="email-button" 
-                        data-umami-event="Email button" 
-                        href="mailto:miroslav.pejic.85@gmail.com?subject=Attimo Conference info"> 
-                        miroslav.pejic.85@gmail.com
-                    </a>
-                    <br /><br />
                     <hr />
                     <span>&copy; 2025 Attimo Conference, todos os direitos reservados</span>
                     <hr />
